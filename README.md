@@ -1,5 +1,6 @@
 # Sample
 
+SAMPLE (Simple Application for Monitoring, Purchasing and Listing of Equities)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
 
 ## Development server
