@@ -1,0 +1,27 @@
+table {
+  border-collapse: collapse;
+}
+
+th, tr, td {
+  border: 1px solid gray;
+  padding: 0em .25em 0em;
+}
+
+.currency-cell {
+  text-align: right;
+  padding-left: 1em;
+}
+table, input {
+  margin: 0em 1em .5em;
+}
+
+div {
+  margin: 0em 1em .5em;
+}
+
+div button {
+  margin: 0em .5em .5em 0em;
+}
+
+
+

@@ -1,0 +1,18 @@
+<form>
+  <h1>Review Purchase(s)</h1>
+<table class="purchase-list">
+  <tr>
+    <th>Id</th><th>Symbol</th><th>Amt</th>
+  </tr>
+  <tr *ngFor="let purchase of purchases">
+    <td>{{purchase.id}}</td><td>{{purchase.symbol}}</td><td class="currency-cell">{{purchase.amount}}</td>
+  </tr>
+  <tr *ngIf="!purchases || (purchases && purchases.length === 0)"><td colspan="3">No Results Found</td></tr>
+</table>
+  <input #booger type="text" name="filterValue" class="purchase-list">
+  <div>
+    <button (click)="loadAllPurchases()">Find All</button>
+    <button (click)="loadPurchasesById(booger.value)">Find By Id</button>
+    <button (click)="loadPurchasesBySymbol(booger.value)">Find by Symbol</button>
+  </div>
+</form>
